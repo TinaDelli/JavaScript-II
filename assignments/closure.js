@@ -12,7 +12,6 @@ function destinyTwo() {
     function mission() {
       console.log(`The bad guy wonders how you obtained ${ghost}`);
       console.log(`The planets will forever know you as ${hero}`);
-      debugger;
     }// mission
     
     mission();

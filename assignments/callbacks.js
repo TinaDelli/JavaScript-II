@@ -72,19 +72,18 @@ const arrayItems = function(item, list) {
   return list.includes(item);
 }
 console.log(contains('Pencil',items, arrayItems));
-/*const arrayItem = function(item, items) {
-  for (let item of item) {
-    if (items(item)) {
-      arrayItem.push(item);
-    }
-  }
-return arrayItem;
-}*/
 
 /* STRETCH PROBLEM */
-
+/*
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+ return cb(array)
 }
+
+const duplicateRemoval = [];
+  duplicateRemoval = array.filter(function(item, position, self){
+    return self.indexOf(item) == position;
+  });
+*/
