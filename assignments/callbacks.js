@@ -74,7 +74,8 @@ const arrayItems = function(item, list) {
 console.log(contains('Pencil',items, arrayItems));
 
 /* STRETCH PROBLEM */
-/*
+const fruits = ['pear', 'apple', 'banana', 'pineapple', 'banana'];
+
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
@@ -82,8 +83,9 @@ function removeDuplicates(array, cb) {
  return cb(array)
 }
 
-const duplicateRemoval = [];
-  duplicateRemoval = array.filter(function(item, position, self){
-    return self.indexOf(item) == position;
+const duplicateRemoval = function(array) {
+  return array.filter(function(item, index){
+    return array.indexOf(item) >= index;
   });
-*/
+};
+console.log(removeDuplicates(fruits,duplicateRemoval));
